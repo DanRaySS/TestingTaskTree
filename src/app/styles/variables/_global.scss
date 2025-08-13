@@ -1,0 +1,84 @@
+:root {
+  // Основной шрифт
+  --font-family-main: "Open Sans", "Times New Roman", serif;
+
+  // Размер шрифта Extra
+  --font-size-extra: 55px;
+  --font-line-extra: 64px;
+  --font-weight-extra: 800;
+  --font-extra: var(--font-weight-extra) var(--font-size-extra) / var(--font-line-extra) var(--font-family-main);
+
+  // Размер шрифта L
+  --font-size-l: 35px;
+  --font-line-l: 35px;
+  --font-weight-l: 800;
+  --font-l: var(--font-weight-l) var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+  // Размер шрифта Bold
+  --font-size-bold: 24px;
+  --font-line-bold: 36px;
+  --font-weight-bold: 700;
+  --font-bold: var(--font-weight-bold) var(--font-size-bold) / var(--font-line-bold) var(--font-family-main);
+
+  // Размер шрифта SemiBold
+  --font-size-semi-bold: 21px;
+  --font-line-semi-bold: 32px;
+  --font-weight-semi-bold: 600;
+  --font-semi-bold: var(--font-weight-semi-bold) var(--font-size-semi-bold) / var(--font-line-semi-bold) var(--font-family-main);
+
+  // Размер шрифта Label
+  --font-size-label: 19px;
+  --font-line-label: 20px;
+  --font-weight-label: 800;
+  --font-label: var(--font-weight-label) var(--font-size-label) / var(--font-line-label) var(--font-family-main);
+
+  // Размер шрифта Light
+  --font-size-light: 18px;
+  --font-line-light: 27px;
+  --font-weight-light: 300;
+  --font-light: var(--font-weight-light) var(--font-size-light) / var(--font-line-light) var(--font-family-main);
+
+  // Размер шрифта Main
+  --font-size-main: 16px;
+  --font-line-main: 23px;
+  --font-weight-main: 600;
+  --font-main: var(--font-weight-main) var(--font-size-main) / var(--font-line-main) var(--font-family-main);
+
+  // Размер шрифта MiniLightBolder
+  --font-size-mini-light-bolder: 14px;
+  --font-line-mini-light-bolder: 21px;
+  --font-weight-mini-light-bolder: 600;
+  --font-mini-light-bolder: var(--font-weight-mini-light-bolder) var(--font-size-mini-light-bolder) / var(--font-line-mini-light-bolder) var(--font-family-main);
+
+  // Размер шрифта MiniLight
+  --font-size-mini-light: 14px;
+  --font-line-mini-light: 21px;
+  --font-weight-mini-light: 300;
+  --font-mini-light: var(--font-weight-mini-light) var(--font-size-mini-light) / var(--font-line-mini-light) var(--font-family-main);
+
+  // Размер шрифта Small
+  --font-size-small: 10px;
+  --font-line-small: 20px;
+  --font-weight-small: 800;
+  --font-small: var(--font-weight-small) var(--font-size-small) / var(--font-line-small) var(--font-family-main);
+
+  // Цвет
+  --white-primary: #fff;
+  --black-primary: #161513;
+  --black-secondary: #222;
+  --black-lighter: #191919;
+  --black-light: #2A2A2A;
+  --black-opacity: rgb(0 0 0 / 2000%);
+  --gray-light: #C5C5C5;
+  --gray-dark: #8491A0;
+  --blue: #1976D2;
+  --green: #4CAF50;
+  --blue-light: #5BADFF;
+  --orange: #FF3D00;
+  --yellow: #FFC107;
+  --blue-gradient: linear-gradient(#5BADFF 0%, #1373D1 100%);
+  --orange-gradient: linear-gradient(#FF8660 0%, #D5491D 100%);
+  --orange-purple-gradient-1: linear-gradient(to right, #FF8660 0%, #9A33FF 100%);
+  --orange-purple-gradient-2: linear-gradient(#FF8660 0%, #8000FF 100%);
+  --white-gradient: linear-gradient(#FDFDFD 0%, rgb(255 255 255 / 1800%) 100%);
+}

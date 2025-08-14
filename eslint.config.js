@@ -59,7 +59,7 @@ export default tseslint.config([
       '@stylistic/multiline-ternary': ["warn", "always-multiline"],
       '@stylistic/new-parens': "warn",
       '@stylistic/no-confusing-arrow': "warn",
-      '@stylistic/no-extra-parens': "warn",
+      '@stylistic/no-extra-parens': "off",
       '@stylistic/no-extra-semi': "warn",
       '@stylistic/no-floating-decimal': "warn",
       '@stylistic/no-mixed-spaces-and-tabs': "warn",

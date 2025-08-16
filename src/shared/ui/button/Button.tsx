@@ -15,7 +15,6 @@ interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = (props: IButtonProps) => {
   const {
     className,
-    size = EButtonSize.MEDIUM,
     children,
     onClick,
     isPreventDefault = true,
@@ -31,7 +30,6 @@ export const Button = (props: IButtonProps) => {
   }, [isPreventDefault, onClick]);
 
   const mods = {
-    [cls[size]]: true,
     [cls[variant]]: true
   };
 

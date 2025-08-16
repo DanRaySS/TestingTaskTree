@@ -7,5 +7,6 @@ export default {
     rules: {
         'selector-class-pattern': null,
         'no-descending-specificity': null,
+        'property-no-unknown': null
     }
 };

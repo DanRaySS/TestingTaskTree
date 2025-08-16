@@ -1,8 +1,9 @@
 {
-	"plugins": [
-		"@stylistic/stylelint-plugin"
-	],
-	"rules": {
-		"@stylistic/indentation": 2
-	}
+  "customSyntax": "postcss-scss",
+  "plugins": [
+    "@stylistic/stylelint-plugin"
+  ],
+  "rules": {
+    "@stylistic/indentation": 2
+  }
 }

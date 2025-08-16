@@ -1,84 +1,76 @@
 :root {
-  // Основной шрифт
-  --font-family-main: "Open Sans", "Times New Roman", serif;
+  --font-family-main: "Inter", "Open Sans", "Segoe UI", sans-serif;
+  --font-family-accent: "Playfair Display", serif;
 
-  // Размер шрифта Extra
-  --font-size-extra: 55px;
-  --font-line-extra: 64px;
-  --font-weight-extra: 800;
-  --font-extra: var(--font-weight-extra) var(--font-size-extra) / var(--font-line-extra) var(--font-family-main);
+  // Базовый
+  --font-size-base: 1rem;
+  --font-line-base: 1.5rem;
+  --font-base: var(--font-size-base) / var(--font-line-base) var(--font-family-main);
 
-  // Размер шрифта L
-  --font-size-l: 35px;
-  --font-line-l: 35px;
-  --font-weight-l: 800;
-  --font-l: var(--font-weight-l) var(--font-size-l) / var(--font-line-l) var(--font-family-main);
-
-  // Размер шрифта Bold
-  --font-size-bold: 24px;
-  --font-line-bold: 36px;
-  --font-weight-bold: 700;
-  --font-bold: var(--font-weight-bold) var(--font-size-bold) / var(--font-line-bold) var(--font-family-main);
-
-  // Размер шрифта SemiBold
-  --font-size-semi-bold: 21px;
-  --font-line-semi-bold: 32px;
-  --font-weight-semi-bold: 600;
-  --font-semi-bold: var(--font-weight-semi-bold) var(--font-size-semi-bold) / var(--font-line-semi-bold) var(--font-family-main);
-
-  // Размер шрифта Label
-  --font-size-label: 19px;
-  --font-line-label: 20px;
-  --font-weight-label: 800;
-  --font-label: var(--font-weight-label) var(--font-size-label) / var(--font-line-label) var(--font-family-main);
-
-  // Размер шрифта Light
-  --font-size-light: 18px;
-  --font-line-light: 27px;
+  // Light
+  --font-size-light: 1.125rem;
+  --font-line-light: 1.6875rem;
   --font-weight-light: 300;
   --font-light: var(--font-weight-light) var(--font-size-light) / var(--font-line-light) var(--font-family-main);
 
-  // Размер шрифта Main
-  --font-size-main: 16px;
-  --font-line-main: 23px;
-  --font-weight-main: 600;
-  --font-main: var(--font-weight-main) var(--font-size-main) / var(--font-line-main) var(--font-family-main);
+  // Обычный
+  --font-size-regular: 1rem;
+  --font-line-regular: 1.5rem;
+  --font-weight-regular: 400;
+  --font-regular: var(--font-weight-regular) var(--font-size-regular) / var(--font-line-regular) var(--font-family-main);
 
-  // Размер шрифта MiniLightBolder
-  --font-size-mini-light-bolder: 14px;
-  --font-line-mini-light-bolder: 21px;
-  --font-weight-mini-light-bolder: 600;
-  --font-mini-light-bolder: var(--font-weight-mini-light-bolder) var(--font-size-mini-light-bolder) / var(--font-line-mini-light-bolder) var(--font-family-main);
+  // Средний
+  --font-size-medium: 1.25rem;
+  --font-line-medium: 1.75rem;
+  --font-weight-medium: 500;
+  --font-medium: var(--font-weight-medium) var(--font-size-medium) / var(--font-line-medium) var(--font-family-main);
 
-  // Размер шрифта MiniLight
-  --font-size-mini-light: 14px;
-  --font-line-mini-light: 21px;
-  --font-weight-mini-light: 300;
-  --font-mini-light: var(--font-weight-mini-light) var(--font-size-mini-light) / var(--font-line-mini-light) var(--font-family-main);
+  // Жирный
+  --font-size-bold: 1.5rem;
+  --font-line-bold: 2rem;
+  --font-weight-bold: 700;
+  --font-bold: var(--font-weight-bold) var(--font-size-bold) / var(--font-line-bold) var(--font-family-main);
 
-  // Размер шрифта Small
-  --font-size-small: 10px;
-  --font-line-small: 20px;
-  --font-weight-small: 800;
-  --font-small: var(--font-weight-small) var(--font-size-small) / var(--font-line-small) var(--font-family-main);
+  // Заголовки
+  --font-h1: 700 2rem/2.5rem var(--font-family-accent);
+  --font-h2: 600 1.75rem/2.25rem var(--font-family-accent);
+  --font-h3: 500 1.5rem/2rem var(--font-family-accent);
 
-  // Цвет
-  --white-primary: #fff;
-  --black-primary: #161513;
-  --black-secondary: #222;
-  --black-lighter: #191919;
-  --black-light: #2A2A2A;
-  --black-opacity: rgb(0 0 0 / 2000%);
-  --gray-light: #C5C5C5;
-  --gray-dark: #8491A0;
-  --blue: #1976D2;
-  --green: #4CAF50;
-  --blue-light: #5BADFF;
-  --orange: #FF3D00;
-  --yellow: #FFC107;
-  --blue-gradient: linear-gradient(#5BADFF 0%, #1373D1 100%);
-  --orange-gradient: linear-gradient(#FF8660 0%, #D5491D 100%);
-  --orange-purple-gradient-1: linear-gradient(to right, #FF8660 0%, #9A33FF 100%);
-  --orange-purple-gradient-2: linear-gradient(#FF8660 0%, #8000FF 100%);
-  --white-gradient: linear-gradient(#FDFDFD 0%, rgb(255 255 255 / 1800%) 100%);
+  // Цвета для светлой темы
+
+  // Цвета текста
+  --color-text-primary: #1c1c1c;
+  --color-text-secondary: #555;
+  --color-text-muted: #888;
+  --color-text-invert: #ffffff;
+
+  // Фон
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f7f7f9;
+  --color-bg-accent: #f0f4ff;
+
+  // Акценты
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --color-accent-muted: #93c5fd;
+
+  // Статусы
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-error: #dc2626;
+
+  // Цвета для тёмной темы
+
+  --color-text-primary-inverted: #f5f5f5;
+  --color-text-secondary-inverted: #b0b0b0;
+  --color-text-muted-inverted: #7a7a7a;
+  --color-text-invert-inverted: #000000;
+
+  --color-bg-primary-inverted: #121212;
+  --color-bg-secondary-inverted: #1e1e1e;
+  --color-bg-accent-inverted: #1a2333;
+
+  --color-accent-inverted: #60a5fa;
+  --color-accent-hover-inverted: #3b82f6;
+  --color-accent-muted-inverted: #1d4ed8;
 }

@@ -1,5 +1,5 @@
 export enum EButtonSize {
   SMALL = 'small',
-  MEDIUM = 'meduim',
+  MEDIUM = 'medium',
   LARGE = 'large'
 }

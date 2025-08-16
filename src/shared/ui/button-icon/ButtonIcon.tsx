@@ -16,7 +16,7 @@ interface IButtonIconProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
 export const ButtonIcon = (props: IButtonIconProps) => {
   const {
     className,
-    size = EButtonSize.MEDIUM,
+    size = EButtonSize.SMALL,
     children,
     style,
     onClick,

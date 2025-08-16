@@ -7,7 +7,7 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 export default defineConfig({
   plugins: [react()],
-  base: '/TestingTaskTree/',
+  base: process.env.GITHUB_REPOSITORY?.split('/')[1] ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/',
   resolve: {
     alias: {
       App: path.resolve(dirname, 'src', 'App.tsx'),

@@ -10,7 +10,7 @@ import { BrowserRouter } from 'react-router';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <StoreProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ErrorBoundary>
           <ThemeProvider>
             <App />

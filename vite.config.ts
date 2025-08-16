@@ -10,37 +10,70 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      App: '/src/App.tsx',
-      app: '/src/app',
-      assets: '/src/assets',
-      entities: '/src/entities',
-      helpers: '/src/helpers',
-      pages: '/src/pages',
-      processes: '/src/processes',
-      shared: '/src/shared',
-      widgets: '/src/widgets',
-      features: '/src/features'
+      App: path.resolve(dirname, 'src', 'App.tsx'),
+      app: path.resolve(dirname, 'src', 'app'),
+      assets: path.resolve(dirname, 'src', 'assets'),
+      entities: path.resolve(dirname, 'src', 'entities'),
+      helpers: path.resolve(dirname, 'src', 'helpers'),
+      pages: path.resolve(dirname, 'src', 'pages'),
+      processes: path.resolve(dirname, 'src', 'processes'),
+      shared: path.resolve(dirname, 'src', 'shared'),
+      widgets: path.resolve(dirname, 'src', 'widgets'),
+      features: path.resolve(dirname, 'src', 'features')
     }
   },
   test: {
-    projects: [{
-      extends: true,
-      plugins: [
-        storybookTest({
-          configDir: path.resolve(dirname, 'src', 'shared', 'config', 'storybook')
-        })],
-      test: {
-        name: 'storybook',
-        browser: {
-          enabled: true,
-          headless: true,
-          provider: 'playwright',
-          instances: [{
-            browser: 'chromium'
-          }]
-        },
-        setupFiles: ['./src/shared/config/vitest.setup.ts']
-      }
-    }]
+    projects: [
+      {
+        extends: true,
+        plugins: [
+          storybookTest({
+            configDir: path.resolve(dirname, 'src', 'shared', 'config', 'storybook')
+          })],
+        test: {
+          alias: {
+            App: path.resolve(dirname, 'src', 'App.tsx'),
+            app: path.resolve(dirname, 'src', 'app'),
+            assets: path.resolve(dirname, 'src', 'assets'),
+            entities: path.resolve(dirname, 'src', 'entities'),
+            helpers: path.resolve(dirname, 'src', 'helpers'),
+            pages: path.resolve(dirname, 'src', 'pages'),
+            processes: path.resolve(dirname, 'src', 'processes'),
+            shared: path.resolve(dirname, 'src', 'shared'),
+            widgets: path.resolve(dirname, 'src', 'widgets'),
+            features: path.resolve(dirname, 'src', 'features')
+          },
+          name: 'storybook',
+          browser: {
+            enabled: true,
+            headless: true,
+            provider: 'playwright',
+            instances: [{
+              browser: 'chromium'
+            }]
+          },
+          setupFiles: [path.resolve(dirname, 'src', 'shared', 'config', 'vitest.setup.ts')]
+        }
+      },
+      {
+        test: {
+          alias: {
+            App: path.resolve(dirname, 'src', 'App.tsx'),
+            app: path.resolve(dirname, 'src', 'app'),
+            assets: path.resolve(dirname, 'src', 'assets'),
+            entities: path.resolve(dirname, 'src', 'entities'),
+            helpers: path.resolve(dirname, 'src', 'helpers'),
+            pages: path.resolve(dirname, 'src', 'pages'),
+            processes: path.resolve(dirname, 'src', 'processes'),
+            shared: path.resolve(dirname, 'src', 'shared'),
+            widgets: path.resolve(dirname, 'src', 'widgets'),
+            features: path.resolve(dirname, 'src', 'features')
+          },
+          name: 'tests-unit',
+          include: ['**/*.{test,spec}.{js,jsx,ts,tsx}'],
+          environment: 'jsdom',
+        }
+      },
+    ]
   }
 });

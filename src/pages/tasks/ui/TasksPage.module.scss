@@ -1,0 +1,48 @@
+@use 'app/styles/mixins/mixins' as *;
+
+.TasksPage {
+  display: flex;
+  height: 100vh;
+
+  .Header,
+  .Main,
+  &__left {
+    width: 22.5rem;
+    border-right: 0.0625rem solid var(--color-secondary);
+  }
+
+  .HeaderContent {
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+  }
+
+  .ThemeToggle {
+    display: flex;
+    margin-right: auto;
+  }
+
+  &__left {
+    overflow: auto;
+  }
+
+  &__right {
+    flex: 1;
+    overflow: auto;
+  }
+
+  @include mediatablet {
+    flex-direction: column;
+
+    &__right {
+      width: 22.5rem;
+      border-right: 0.0625rem solid var(--color-secondary);
+    }
+  }
+
+  @include mediaphone {
+
+    &__left,
+    &__right {
+      width: 20rem;
+    }
+  }
+}

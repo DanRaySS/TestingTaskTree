@@ -1,0 +1,28 @@
+.AddTaskForm {
+  padding: 0.5rem;
+}
+
+.Input {
+  color: var(--color-text);
+  display: block;
+  width: 100%;
+  padding: 0.375rem;
+  margin-bottom: 0.375rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--color-secondary);
+}
+
+.TextArea {
+  color: var(--color-text);
+  display: block;
+  width: 100%;
+  padding: 0.375rem;
+  margin-bottom: 0.375rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--color-secondary);
+  min-height: 3.125rem;
+  max-height: 7.5rem;
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
+}

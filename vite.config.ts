@@ -7,6 +7,7 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 export default defineConfig({
   plugins: [react()],
+  base: '/TestingTaskTree/',
   resolve: {
     alias: {
       App: path.resolve(dirname, 'src', 'App.tsx'),

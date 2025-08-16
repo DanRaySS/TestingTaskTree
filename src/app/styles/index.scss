@@ -1,25 +1,25 @@
 @use "reset/reset.scss" as *;
 @use "variables/global.scss" as *;
+@use "themes/dark.scss" as *;
+@use "themes/light.scss" as *;
 
 body {
   font: var(--font-light);
-  color: var(--white-primary);
+  color: var(--color-text);
+  background: var(--color-bg);
 
   &::-webkit-scrollbar {
     width: 0;
   }
+
+  [data-radix-popper-content-wrapper] {
+    background-color: var(--color-bg) !important;
+    color: var(--color-text) !important;
+  }
 }
 
-.content-page {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background: var(--black-primary);
-  overflow: hidden;
-}
-
-.noselect {
-  -webkit-touch-callout: none;
-  user-select: none;
+.app {
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
 }

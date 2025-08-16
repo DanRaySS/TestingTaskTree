@@ -1,0 +1,57 @@
+.Checkbox {
+  width: 1rem;
+  height: 1rem;
+  border: 0.0625rem solid var(--color-secondary);
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+
+  &_selected {
+    font-weight: 700;
+  }
+}
+
+.AddTaskIcon,
+.DeleteTaskIcon {
+  display: inline-block;
+}
+
+.Input {
+  color: var(--color-text);
+  display: block;
+  width: 100%;
+  padding: 0.375rem;
+  margin-bottom: 0.375rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--color-secondary);
+}
+
+.TextArea {
+  color: var(--color-text);
+  display: block;
+  width: 100%;
+  padding: 0.375rem;
+  margin-bottom: 0.375rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--color-secondary);
+  min-height: 3.125rem;
+  max-height: 7.5rem;
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
+}
+
+.Arrow {
+  color: var(--color-text);
+}
+
+.CheckIcon {
+  color: var(--color-text);
+}
